@@ -1,0 +1,119 @@
+/* For the logo */
+.logo {
+    font-family: 'Montez', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    color: blue;
+  }
+  
+  /* For the subheading */
+  .subheading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .button sign-in{
+    width: 20%;
+  }
+
+  .button sign-up{
+    
+    width: 20%;
+   
+  }
+  
+  /* For the "Sign In" and "Sign Up" buttons */
+  .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(196, 196, 0);
+    color: #000;
+    border-style: groove;
+    border-width: 2px;
+    border-color:#fff;
+  }
+  
+  /* Positioning the buttons */
+  .sign-in {
+    position: absolute;
+  top:  0px;
+  right: 10px;
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  color: #fff;
+  }
+  
+  .sign-up {
+    position: absolute;
+    top: 0px;
+    right: 120px;
+    font-family: Arial, sans-serif;
+
+    background-color: blue;
+    color: #fff;
+  }
+  body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* For the segment */
+.segment {
+  display: flex;
+  justify-content: center;
+  margin-top: 23%;
+  
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 3%;
+  width: 400px;
+}
+
+.close {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #d8d8d8;
+  border-color: white;
+}

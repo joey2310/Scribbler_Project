@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>ScriBBler</title>
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="header1">
+    <h1 class="logo">ScriBBler</h1>
+    <h2 class="subheading">Explore, Imagine, Create</h2>
+    <button class="button sign-in">Sign In</button>
+    <button class="button sign-up">Sign Up</button>
+  </div>
+
+  <div id="header2">
+    <div class="segment center-buttons">
+      <button class="button all-post">All Posts</button>
+      <button class="button create-post">Create Post</button>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">X</span>
+      <h3>Get Started</h3>
+      <h3>___________________________________________</h3>
+      <h3>Name</h3>
+      <input type="text" name="name" placeholder="Enter your name">
+      <h3>Username</h3>
+      <input type="text" name="username" placeholder="Enter your username">
+      <h3>Password</h3>
+      <input type="password" name="password" placeholder="Enter your password">
+      <h3>Confirm Password</h3>
+      <input type="password" name="confirm-password" placeholder="Re-enter your password">
+      <button style = "background-color:rgb(51, 168, 51) ; color: white; width: 100%;"  class="button">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signin-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">X</span>
+      <h3>Welcome Back!</h3>
+      <input type="text" placeholder="Enter your username">
+      <input type="password" placeholder="Enter your password">
+      <button class="button">Sign In</button>
+      <p>Not a member? <a href="#" class="sign-up-link">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Create Post Modal -->
+  <div id="createpost-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Pen Your Post</h3>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" placeholder="Enter title of your post">
+      <label for="post-contents">Contents</label>
+      <textarea id="post-contents" placeholder="Enter the contents of your post"></textarea>
+      <button class="button">Create</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
