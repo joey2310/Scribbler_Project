@@ -1,0 +1,65 @@
+/* For the logo */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Pro', serif;
+  }
+
+.logo {
+    display: flex;
+      font-family: 'Montez', cursive;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px;
+      color: blue;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+/* For the subheading */
+.subheading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+ /* For the "Sign In" and "Sign Up" buttons */
+ .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    background-color: rgb(79, 204, 79);
+    border-style: groove;
+    border-width: 3px;
+    border-color:#fff;
+   
+  }
+
+  .sign-in {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    padding: 10px 20px;
+    top: 2%;
+    right: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sign-up {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    padding: 10px 20px;
+    top:2%;
+    right: 120px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }

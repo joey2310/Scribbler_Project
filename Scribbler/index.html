@@ -1,0 +1,89 @@
+<html>
+<head>
+  <title>ScriBBler</title>
+   <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/common.css">
+</head> 
+<body>
+  <!-- Header Section -->
+  <div id="header1">
+    <h1 class="logo">ScriBBler</h1>
+    <h2 class="subheading">Explore, Imagine, Create</h2>
+    <button class="sign-in">Sign In</button>
+    <button class="sign-up">Sign Up</button>
+  </div>
+
+  <div id="header2">
+    <div class="segment center-buttons">
+      <button class="button all-post">All Posts</button>
+      <button class="button create-post">Create Post</button>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <div class="header">
+      <h2>Get Started</h2>
+      <span class="close">&times;</span>
+    </div>
+    <div class="body">
+      <form>
+      <h3>Name</h3>
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <h3>Username</h3>
+      <input type="text" name="username" placeholder="Enter your username" required>
+      <h3>Password</h3>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <h3>Confirm Password</h3>
+      <input type="password" name="confirm-password" placeholder="Re-enter your password" required>
+      <button class="button" type="submit" VALUE="SUBMIT">Sign Up</button>
+    </form>
+    </div>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signin-modal" class="modal">
+    <div class="modal-content">
+      <div class="header">
+      <h2>Welcome Back!</h2>
+      <span class="close">&times;</span>
+    </div>
+    <h3>Username</h3>
+      <input type="text" name="Username" placeholder="Enter your username" required>
+      <h3>Password</h3>
+      <input type="password" name="Password" placeholder="Enter your password" required>
+      <button class = "button" type="submit" VALUE="SUBMIT">Sign In</button>
+      <p class="member">Not a member? <a href="#" class="sign-up-link">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Create Post Modal -->
+  <div id="createpost-modal" class="modal">
+    <div class="modal-content">
+      <div class="header">
+        <h2>Pen Your Post</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="form-group">
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" placeholder="Enter title of your post">
+    </div>
+    <div class="form-group">
+      <label for="post-contents">Contents</label>
+      <textarea id="post-contents" placeholder="Enter the contents of your post"></textarea>
+    </div>
+    <div style="display: flex;" >
+      <button class="button-create">Create</button>
+    </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for interaction -->
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+  #signup-modal .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    background-color: rgb(79, 204, 79);
+    border-style: groove;
+    border-width: 3px;
+    border-color:#fff;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  #signin-modal .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    background-color: rgb(79, 204, 79);
+    border-style: groove;
+    border-width: 3px;
+    border-color:#fff;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  /* Positioning the buttons */
+  .sign-in {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  position: absolute;
+  padding: 10px 20px;
+  top:  4%;
+  right: 10px;
+  background-color: blue;
+  color: #fff;
+  border: none
+  ;
+  }
+  
+  .sign-up {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    padding:10px 20px;
+    top: 4%;
+    right: 120px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+  }
+
+body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* For the segment */
+.segment {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;  
+  
+} 
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#signin-modal .modal-content {
+  background-color: white;
+  width: 400px;
+  height:300px;
+  border-radius: 5px;
+  position: relative;
+  top: 20%;
+  left: 35% ;
+  padding :2%;
+}
+
+#signup-modal .modal-content {
+  background-color: white;
+  width: 400px;
+  height:450px;
+  border-radius: 5px;
+  position: relative;
+  top: 15%;
+  left: 35% ;
+  padding :2%;
+}
+
+#createpost-modal .modal-content {
+  background-color: white;
+  width: 85%;
+  height:80%;
+  position: relative;
+  top: 5%;
+  left: 5% ;
+  padding :2%;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.close {
+  color: #888;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+textarea{
+  height: 500px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 1px;
+  background-color: #d8d8d8;
+  border-color: #d8d8d8;
+}
+
+.segment .center-buttons{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button.all-post {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(196, 196, 0);
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+.button.create-post {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  background-color: rgb(196, 196, 0);
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#signup-modal .header{
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#signup-modal h2{
+  color : gray;
+}
+
+#signup-modal h3{
+  padding : 3% 0% 3% ;
+  
+}
+
+#signin-modal .header{
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#signin-modal h2{
+  color : gray;
+}
+
+#signin-modal h3{
+  padding : 3% 0% 3% ;
+  
+}
+
+#signin-modal .member{
+  padding-top: 4%;
+  text-align: center;
+}
+
+#createpost-modal .header{
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#createpost-modal h2{
+  color : gray;
+}
+
+#createpost-modal .form-group{
+  padding-top: 1%;
+  
+}
+
+#createpost-modal input{
+  width: 40%;
+}
+#createpost-modal textarea{
+  height: 60%;
+}
+
+#createpost-modal .button-create{
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    background-color: rgb(79, 204, 79);
+    border-style: groove;
+    border-width: 3px;
+    border-color:#fff;
+    margin-left: 45%;
+}

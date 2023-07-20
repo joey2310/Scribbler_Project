@@ -1,0 +1,219 @@
+/* postslist.css */
+/* CSS for postslist.html */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffeedd;
+}
+
+.button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  padding: 10px 100px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(79, 204, 79);
+  border-style: groove;
+  border-width: 3px;
+  border-color: #fff;
+}
+
+.posts-list {
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.post-card {
+  width: 90%;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  /* padding: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  border-radius: 15px;
+  display: flex;
+  height: 7rem;
+}
+
+.post-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* .post-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
+
+.post-card .user {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-card .post-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-card .delete-icon {
+  float: right;
+  color: gray;
+  cursor: pointer;
+  padding-right: 0.4rem;
+}
+
+.post-card .delete-icon:hover {
+  color: #cc0000;
+}
+
+.posts-list .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  float: left;
+  width: 12%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  background-color: rgb(238, 229, 229);
+  border-radius: 15px;
+}
+
+.ellipsis-icon {
+  float: right;
+  padding-right: 0.4rem;
+}
+
+.postContent {
+  width: 78%;
+}
+
+.post-user {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 15%;
+  color: gray;
+}
+
+.post-content {
+  background-color: rgb(228, 224, 224);
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0.5rem;
+}
+
+.post-user h4 {
+  text-align: center;
+}
+
+.post-heading {
+  color: gray;
+}
+
+.post-card:nth-last-child(1):nth-child(odd) {
+  grid-column: span 2;
+  width: 43%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.modal p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.modal button {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 2%;
+  width: 20%;
+}
+
+.modal #yes {
+  background-color: rgb(64, 155, 64);
+  color: white;
+  border: none;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal #no {
+  background-color: rgb(232, 92, 92);
+  color: white;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.post-text {
+  /* Set a max-height to limit the text to three lines */
+  max-height: calc(1.2em * 3); /* Assuming line height is 1.2em */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit the text to three lines */
+  line-height: 1.2;
+}
+
+.post-text.truncated {
+  /* Show ellipsis for truncated text */
+  position: relative;
+}
+
+.post-text.truncated::after {
+  content: '...';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 2px;
+}
+
+.ellipse-icon{
+  float: right;
+  margin-right: 1%;
+  cursor: pointer;
+  font-weight: bolder;
+  color: gray;
+}
