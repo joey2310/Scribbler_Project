@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Post Details</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/post.css">
+  <link rel="stylesheet" href="styles/common.css">
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div id="header1"></div>
+  <!-- Sign In Modal -->
+  <div id="signin-modal" class="modal"></div>
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" class="modal"></div>
+
+
+  <!-- Post Content Section -->
+  <div class="post-content">
+    <!-- Post Title (Editable mode) -->
+    <div class="post-title editable">
+
+    </div>
+
+    <!-- Post Author -->
+    <div class="post-header">
+      <div class="post-author">Author Name</div>
+
+      <!-- Edit/Save Button -->
+      <button class="edit-save-button"><i class="fas fa-edit"></i>Edit</button>
+    </div>
+    <!-- Post Text (Editable mode) -->
+    <div class="post-text editable">
+    </div>
+
+    <!-- Like Button -->
+    <div class="like-section">
+      <button class="like-button"><i class="fas fa-thumbs-up"></i>Like</button>
+      <div class="like-counter">Be the first one to like this!</div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <!-- Leave a comment input box -->
+      <textarea class="comment-input" placeholder="Leave a comment..." ></textarea> 
+      <br>
+      <!-- Comment button -->
+      <button class="comment-button">Comment</button>
+
+      <div class="comments"> All Comments </div>
+      <!-- All Comments -->
+      <div class="all-comments">
+        <!-- Comment 1 -->
+        <div class="comment">User 1: This is the first comment.</div>
+        <!-- Comment 2 -->
+        <div class="comment">User 2: This is another comment.</div>
+        <!-- Add new comments here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="scripts/post.js"></script>
+  <script src="scripts/common.js"></script>
+</body>
+
+</html>
